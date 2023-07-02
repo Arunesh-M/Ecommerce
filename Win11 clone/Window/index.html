@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Linking css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Calc css -->
+    <link rel="stylesheet" href="stylecalc.css">
+    <!-- Weather Api -->
+    <link rel="stylesheet" href="styleapi.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>   
+    <main>
+        <section class="desktop_icons">
+                <img id="pc" src="Images/thispc.png" alt="Desktop-icon">
+                <p class="icons_content">This pc</p>
+                <img id="edge" src="Images/edgeicon.png" alt="Desktop-icon">
+                <p class="icons_content">Microsoft Edge</p>
+                <img id="bin" src="Images/recyclebinicon.png" alt="Desktop-icon">
+                <p class="icons_content">Recylce Bin</p>
+                <img id="calc" src="Images/calcIcon.png" alt="Desktop-icon">
+                <p class="icons_content">Calculator</p>
+                <img id="weather" src="Images/weatherIcon.png" alt="Desktop-icon">
+                <p class="icons_content">Weather Api</p>
+        </section>
+        <section class="display_icons">
+            <div id="start-menu">
+                <img src="Images/startmenu.PNG" alt="display-icon">
+                <a id="power"><i class='bx bx-power-off' ></i></a>
+            </div>
+            <img id="search-menu" src="Images/search.jpg" alt="display-image">
+            <img id="widget-menu" src="Images/widgets.jpg" alt="display-image">
+            <img id="vscode-menu" src="Images/vsCode display.PNG" alt="display-image">
+            <img id="explorer-menu" src="Images/quick-access.png" alt="display-image">
+            <img id="store-menu" src="Images/store.jpg" alt="display-image">
+            <!-- Desktop Display -->
+            <div id="pc-folder">
+                <img src="Images/pcDisplay.png" alt="display-image">
+                <i id="pc-close" class="bx bx-x"></i>
+            </div>
+            <div id="edge-display">
+                <img src="Images/edgeDisplay.PNG" alt="display-image">
+                <i id="edge-close" class="bx bx-x"></i>
+            </div>
+            <div id="bin-folder">
+                <img src="Images/binDisplay.PNG" alt="display-image">
+                <i id="bin-close" class="bx bx-x"></i>
+            </div>
+            <!-- calc -->
+            <div id="calc-display">
+                <input class="input" type="text" placeholder="0" id="output" readonly>
+                <button class="clear" onclick="clearValue()">Cl</button>
+                <button class="del" onclick="del()">Del</button>
+                <button class="mod" onclick="display('%')">%</button>
+                <button class="div" onclick="display('/')">/</button>
+                <button class="7" onclick="display('7')">7</button>
+                <button class="8" onclick="display('8')">8</button>
+                <button class="9" onclick="display('9')">9</button>
+                <button class="mul" onclick="display('*')">*</button>
+                <button class="4" onclick="display('4')">4</button>
+                <button class="5" onclick="display('5')">5</button>
+                <button class="6" onclick="display('6')">6</button>
+                <button class="min" onclick="display('-')">-</button>
+                <button class="1" onclick="display('1')">1</button>
+                <button class="2" onclick="display('2')">2</button>
+                <button class="3" onclick="display('3')">3</button>
+                <button class="plus" onclick="display('+')">+</button>
+                <button class="zero" onclick="display('0')">0</button>
+                <button class="dot" onclick="display('.')">.</button>
+                <button class="equal" onclick="calculate()">=</button>
+                <i id="calc-close" class="bx bx-x"></i>
+            </div>
+            <!--Weather api-->
+            <div class="weather-container">
+                <input type="text" id="city-input" placeholder="Enter city name" spellcheck="false">
+                <i class='bx bx-search' id="search"></i>
+                <i id="api-close" class="bx bx-x"></i>
+                <p class="error">Invalid City or Connection Error</p>
+                <div id="details">
+                    <p id="city-name">Chennai</p>
+                    <div id="column">
+                        <img id="climate" src="Weather/clouds.png" alt="Weather">
+                        <div id="values">
+                            <p id="temp">Temp : 32°C</p>
+                            <p id="humidity">Humdity : 60%</p>
+                            <p id="wind">Wind : 4.12km/h</p>
+                        </div>             
+                    </div>
+                    <p id="weather-type">Weather: Cloudy</p>                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="taskbar">
+        <img id="start-icon" src="Images/win.PNG" alt="taskbar-icon">
+        <img id="search-icon" src="Images/searchIcon.PNG" alt="taskbar-icon">
+        <img id="widgets-icon"src="Images/widgetsIcon.PNG" alt="taskbar-icon">
+        <img id="chrome-icon" src="Images/chromeIcon.png" alt="taskbar-icon">
+        <img id="vscode-icon" src="Images/vscodeIcons.PNG" alt="taskbar-icon">
+        <img id="explorer-icon" src="Images/fileExplorerIcon.png" alt="taskbar-icon">
+        <img id="store-icon" src="Images/storeIcon.PNG" alt="taskbar-icon">
+        <img id="right-taskbar" src="Images/taskbarright.PNG" alt="taskbar-icon">
+    </footer>
+    <!-- Linking Script -->
+    <script defer src="script.js"></script> 
+    <!-- calc script -->
+    <script defer src="scriptcalc.js"></script>
+    <!-- weather script -->
+    <script defer src="scriptapi.js"></script>
+</body>
+</html>

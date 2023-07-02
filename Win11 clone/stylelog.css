@@ -1,0 +1,139 @@
+/* Background */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
+}
+
+body{
+    background: url(Img/bg.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.blur{
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(200px);
+}
+
+/* date function */
+
+.date-time{
+    display: block;
+}
+
+#time{
+    position: absolute;
+    bottom:12%;
+    left:1%;
+    color:#fff;
+    font-size:160px;
+    font-family: 'Inter', sans-serif;
+}
+
+#date{
+    position: absolute;
+    bottom:5%;
+    left:1%;
+    color:#fff;
+    font-size: 70px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* signup function */
+
+.sign{
+    height:100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img{
+    border-radius: 50%;
+}
+
+#name{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-bottom: 10px;  
+}
+
+#btn{
+    width:80px;
+    padding:5px;
+    background-color: rgba(132, 153, 172, 0.192);
+    border: 1px solid #f8f8f8fb;
+    color:#ffffffbe;
+    display:block; 
+}
+
+#btn:hover{
+    background-color: rgba(175, 184, 194, 0.329);
+    cursor:pointer
+}
+
+#int{
+    width:190px;
+    padding:5px;
+    outline: none;
+    margin-left:-15px;
+    background-color: rgba(132, 153, 172, 0.192);
+    border: 1px solid #f8f8f8fb;
+    border-right: none;
+    color:#ffffffbe;
+    display: none;
+}
+
+#check{
+    height:25px;
+    width:30px;
+    font-size: 25px;
+    margin-left:210px;
+    margin-top:-27px;
+    color:white;
+    border: 1px solid #f8f8f8fb;
+    display: none;
+}
+
+#check:hover{
+    background-color: #a39a9a;
+    color:rgb(37, 32, 32);
+    cursor: pointer;
+}
+
+p.error{
+    margin-left:-65px;
+    margin-top: 10px;
+    color: rgb(255, 25, 25);
+    text-shadow: #000000;
+    font-size: 16px;
+    font-weight:1000;
+    display: none;
+}
+
+#power-off{
+    position:absolute;
+    bottom: 0;
+    right: 0.2%;
+    font-size:35px;
+    color:#a39a9a;
+    background-color:rgba(132, 153, 172, 0.192) ;
+}
+
+#power-off:hover{
+    background-color: rgba(165, 82, 82, 0.705);
+    cursor: pointer;
+}
+
