@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website-Shopping cart</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bxs-joystick' id="game_icon"></i>
+            <a href="#"  class="logo">Game Shop</a>
+           <i class='bx bx-shopping-bag' id="cart_icon" ></i>
+           <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content" id="save">
+                <!-- <div class="cart-box">
+                    <img src="Images/Origins.jpg" alt="Orgins Disc" class="cart-img" >
+                    <div class="details">
+                        <h2 class="cart-product-title">Assassin's Creed Origins (PS4)</h2>
+                        <p class="cart-price">₹ 1233</p>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    
+                    <i class='bx bxs-trash-alt remove'></i>
+                </div> -->
+                <div class="total">
+                    <p class="total-title">Total</p>
+                    <p class="total-price" id="Tot">₹ 0</p>
+                </div> 
+                <!-- button -->
+                <button type="button" class="btn">Buy Now</button>
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+           </div>
+        </div>
+    </header>
+    <!-- Slide -->
+    <section class="shop container">
+        <div class="slider">
+            <div class="slide">
+                <div id="edit1">
+                    <img src="Images/ff16.jpg" alt="Final fantasy 16 cover" id="slide1">
+                    <button id="coming">Coming Soon</button>
+                    <button id="check_out">Visit Trailer</button>           
+                </div>
+                <div id="edit2">
+                    <img src="Images/ps5crop.jpg" alt="ps5 Cover" id="slide2">
+                    <button id="pre_order">Pre-Order</button>
+                    <button id="Notify_me">Notify Me</button>
+                </div>
+                <div id="edit3">
+                    <img src="Images/hogwartscrop.jpeg" alt="Hogwarts Legacy cover" id="slide3">
+                </div>
+            </div>
+            <div class="nav_slider">  
+                <i class='bx bx-radio-circle dot' id="btn_1"></i>
+                <i class='bx bx-radio-circle dot' id="btn_2"></i>
+                <i class='bx bx-radio-circle dot' id="btn_3"></i>
+            </div>
+        </div>
+        <!--Shop container  -->
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="Images/Origins.jpg" alt="Orgins Disc" class="product-img" >
+                <h2 class="product-title">Assassin's Creed Origins (PS4)</h2>
+                <span class="price">₹ 1233</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/God of War.jpg" alt="God of War Disc" class="product-img">
+                <h2 class="product-title">God of War (PS4)</h2>
+                <span class="price">₹ 2567</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/Horizon1.jpg" alt="Hzd Disc" class="product-img">
+                <h2 class="product-title">Horizon zero Dawn (PS4)</h2>
+                <span class="price">₹ 999</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/spiderman2.jpg" alt="spiderman Disc" class="product-img spidimg">
+                <h2 class="product-title">Spiderman (PS4)</h2>
+                <span class="price">₹ 1499</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/vr.jpg" alt="Vr" class="product-img">
+                <h2 class="product-title">PlayStation VR - Marvel's Iron Man Bundle</h2>
+                <span class="price">₹ 42599</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/halo1.jpg" alt="Halo disc" class="product-img">
+                <h2 class="product-title">Halo (Xbox one)</h2>
+                <span class="price">₹ 3999</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/red redemption.jpg" alt="Rdr2 disc" class="product-img">
+                <h2 class="product-title">Red Dead Redemption 2 (Xbox one)</h2>
+                <span class="price">₹ 2999</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/joystick.jpg" alt="joystick" class="product-img">
+                <h2 class="product-title">Xbox joystick</h2>
+                <span class="price">₹ 4999</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/Xbox.jpg" alt="Xbox Console" class="product-img">
+                <h2 class="product-title">Xbox One X(with forza bundle)</h2>
+                <span class="price">₹ 39999</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/ps4.jpg" alt="Ps4 Console" class="product-img">
+                <h2 class="product-title">Ps4 Console</h2>
+                <span class="price">₹ 22499</span>
+                <i class='bx bxs-shopping-bag-alt cart2'></i>
+            </div>
+            <div class="product-box stock">
+                <img src="Images/wd11.jpg" alt="wd disc" class="product-img">
+                <h2 class="product-title">Watch dogs (Xbox one)</h2>
+                <span class="stock_content">Out of Stock</span>
+            </div>
+            <div class="product-box stock">
+                <img src="Images/persona 5.jpg" alt="P5R disc" class="product-img">
+                <h2 class="product-title">Persona 5 Royal (Ps4)</h2>
+                <span class="stock_content">Out of Stock</span>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer container"> 
+            <div class="social-menu">
+                <ul>
+                    <li id="fb"><a href="#" target="blank"><i class='bx bxl-facebook'></i></a></li>
+                    <li id="insta"><a href="#" target="blank"><i class="bx bxl-instagram"></i></a></li>
+                    <li id="twitter"><a href="#" target="blank"><i class="bx bxl-twitter"></i></a></li>
+                </ul>
+            </div>
+            <p id="copyrights">&#169 Copyright.All rights reserved</p>
+        </div>  
+    </footer>
+    <!-- Link to Script -->
+    <script defer src="script1.js"></script>
+</body>
+</html>
