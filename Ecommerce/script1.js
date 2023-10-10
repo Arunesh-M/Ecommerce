@@ -1,3 +1,7 @@
+function ready(){
+    console.log("Ready")
+}
+
 if(document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded',ready);
  }
