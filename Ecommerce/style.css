@@ -321,6 +321,10 @@ section{
    color:#fd4646 ;
 }
 
+.stock:hover{
+    cursor: not-allowed;
+}
+
 .product-img{
    height: 242.75px; 
 }
